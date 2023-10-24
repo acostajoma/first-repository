@@ -1,0 +1,415 @@
+:root {
+    --primaryColor: #2b2c38;
+    --primaryAlternative: #1c1d25;
+    --secundaryColor: #ef744b;
+    --secundaryAlternative: coral;
+    --lightColor: white;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/* GENERAL */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 9rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 2rem 0;
+} 
+
+p {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: var(--lightColor);
+}
+
+.subtext{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.button {
+    width: fit-content;
+    padding: 0 2rem;
+    height: 6rem;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--secundaryAlternative);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+}
+
+.button:hover {
+    background-color: var(--secundaryColor);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+section {
+    background-color: var(--lightColor);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primaryAlternative);
+    height: 100vh;
+    color:  var(--lightColor);
+    font-size: 4rem;
+}
+
+header.expandedNav {
+    height: calc(100vh + 30rem);
+}
+
+.side-margin{
+    margin: 0 3rem;
+}
+
+/* NAV + LOGO */
+
+.logo {
+    height: 8rem;
+    margin: 3rem;
+    display: none;
+}
+
+
+.error-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--primaryColor);
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 25rem;
+    font-size: 3rem;
+}
+
+ul.show {
+    display: block;
+}
+
+li {
+    text-decoration: none;
+}
+.hamburguer {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: var(--lightColor);
+    font-size: 3rem;
+    margin: 2rem;
+    align-self: flex-end;
+}
+
+.hamburguer:focus {
+    outline: none;
+}
+
+/* HERO */
+
+.hero-area {
+    display: flex;
+    height: calc(100% -  7.65rem);
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+header.expandedNav .hero-area{
+    height: 100%;
+}
+
+.hero-text {
+    margin-bottom: 1rem;
+}
+
+.socials {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.social {
+    margin: 2rem;
+    font-size: 5rem;
+}
+
+.fa-file-download{
+    font-size: 4rem;
+}
+
+/* ABOUT */
+
+.about-section {
+    display: block;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 8rem;
+    text-align: justify;
+}
+
+.about-section h2{
+    text-align: center;
+}
+
+.about-me {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headshot {
+    margin: 4rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    border: solid var(--primaryAlternative) 1px;
+}
+
+
+/* PROJECTS */
+
+
+.projects-section{
+    /* display: flex; */
+    flex-direction: column;
+    text-align: center;
+    margin: 8rem 0;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card{
+    width: 30rem;
+    height: 50rem;
+    box-shadow: 0.4rem 0.4rem 1.5rem rgb(197, 195,195);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.project-image {
+    margin-top: 2.5rem;
+    width: 28rem;
+    border-radius: 14rem;
+}
+
+hr {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.content-link {
+    text-decoration: none;
+    color: var(--secundaryColor);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 2rem;
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-align: center;
+}
+
+/* Certifications */
+
+.certification-card {
+    height: 41rem;
+}
+
+.certification-image {
+    margin-top: 2.5rem;
+    width: 28rem;
+}
+
+.more-link{
+    margin: 2rem 0;
+}
+
+.more-link .content-link{
+    font-size: 1.8rem;
+}
+
+
+/* FORM */
+
+input, textarea {
+    height: 4rem;
+    width: 30rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+textarea {
+    height: 10rem;
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.loader {
+    margin-top: 1rem;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid var(--secundaryColor); /* Blue */
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.displayNone {
+    display: none;
+}
+
+.max-width{
+    padding: 0 4rem;
+    max-width: 160rem;
+    margin: auto;
+}
+
+/* MEDIA QUERIES */
+
+@media ( max-width: 500px){
+    /* Applies only for small screens */
+    h1 { 
+        font-size: 7rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    label{
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .button {
+        font-size: 2.5rem;
+        height: 5rem;
+    }
+}
+
+
+@media (min-width: 1000px){
+    .side-margin{
+        margin: 0 6rem;
+    }
+    nav {
+        height: 16rem;
+        padding: 0 8rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        width: 75rem;
+        background-color: var(--primaryColor);
+        align-items: center;
+    }
+
+
+    .logo {
+        display: inline;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input, textarea {
+        width: 40rem;
+    }
+}
+
+@media ( min-width: 1400px){
+    
+    .hero-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .socials {
+        margin-left: 0;
+        display: inline-block;
+        margin-bottom: 20rem;
+    }
+    .hero-text{
+        margin-bottom: 20rem;
+    }
+
+    .about-me {
+        flex-direction: row;
+    }
+
+    .headshot{
+        margin: 0 0 0 5rem;
+    }
+}

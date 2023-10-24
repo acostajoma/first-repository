@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://kit.fontawesome.com/d6bd2fe72b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's portfolio</title>
+</head>
+
+<body>
+    <header id="showHeader">
+        
+        <nav>
+            <img class="logo" src="src/Logo.png" alt="Martin's Logo Image">
+            <ul id="nav-list">
+                <li> <a href="#about-me">About me</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#Certifications">Certifications</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburguer" id="hamburguer">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="hero-area side-margin">
+            <div class="hero-text">
+
+                <h1>Jose Martin Acosta</h1>
+                <p>Solutions Architect Associate</p>
+                <div class="button"><a href="#about-me">About me</a></div>
+            
+            </div>
+
+            <div class="socials">
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/jose-martin-acosta" target="_blank rel="noopener noreferrer"">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <div class="social">
+                    <a  href="/src/Resume Jose Martin Acosta.pdf" download>
+                        <i class="fas fa-file-download"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="about-section">
+
+        <h2>About Me</h2>
+        <div id="about-me" class="about-me max-width">
+            <div><p>Hello, my name is José Martín Acosta. I am a Business administration & Computer Science student with a strong numeric background and a big passion for cloud computing, marketing and data analytics.</p>
+                <p>I have knowledge in programming languages as: Python, Javascript and Dart & the Flutter SDK. I also have an intermediate level of Linux knowledge.</p>
+                <p>Feel free to contact me through the contact form at the end of this page for opportunities, help or information about the AWS Cloud.</p></div>
+            <img class="headshot" src="src/JoseMartinAcostaRodriguez-Badgepic.jpg" alt="Jose's photo">
+        </div>
+
+
+    </main>
+
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container max-width">
+
+            <div class="project-card">
+                <img class="project-image" src="src/Bienes_Raices.jpg" alt="Project One Image">
+                <h3>Real State</h3>
+                <p class="subtext">This is an Static Website I developed using technologies such as HTML and CSS. Actually working to convert this project in a dynamic solution</p>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="projects/bienesraices/index.html" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="src/Blog_De_Café.jpg" alt="Project Two Image">
+                <h3>Coffee Blog</h3>
+                <p class="subtext">This is an Static Website I developed using technologies such as HTML and CSS and is served from an S3 bucket through cloudfront</p>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="projects/blogdecafe/index.html" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="src/Rock_EDM_Festival.jpg" alt="Project Three Image" >
+                <h3>Rock & EDM Festival</h3>
+                <p class="subtext">This is an Static Website I developed using technologies such as HTML and CSS and is from an S3 bucket through cloudfront</p>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="projects/FestivalMusica/index.html" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="src/Wild_rydes.jpg" alt="Project Five Image">
+                <h3>Wild Rydes</h3>
+                <p class="subtext">AWS Workshop. The solution was deployed using services such as: DynamoDB, Amazon Cognito and Amplify</p>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="https://master.d3twabisgki751.amplifyapp.com/" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+        
+            <div class="project-card">
+                <img class="project-image" src="src/CitasReact.jpg" alt="Project Image">
+                <h3>Vet Assistant</h3>
+                <p class="subtext">Static Website, developed using React. The application works with Local Storage. In the future might use DynamoDB as Storage</p>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="projects/APV/index.html" target="_blank" rel="noopener noreferrer">View here</a></p> 
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects-section " id="Certifications">
+        <h2>Certifications</h2>
+        <div class="project-container max-width">
+
+            <div class="project-card certification-card">
+                <img class="certification-image" src="src/aws-re-start-graduate.jpg" alt="Project One Image">
+                <h3>AWS Re/Start Program</h3>
+                
+                <hr/>
+                <p class="subtext"><a class="content-link" href="https://www.credly.com/badges/c6976cce-8bcd-40f2-8b0d-bf8f4fa4f558/public_url" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card certification-card">
+                <img class="project-image" src="src/aws-certified-cloud-practitioner.jpg" alt="Project Two Image">
+                <h3>AWS Cloud Practitioner</h3>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="https://www.credly.com/badges/25901acf-e2ae-4dbc-8a48-67c2be6b9fab/public_url" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card certification-card">
+                <img class="project-image" src="src/aws-certified-solutions-architect-associate.jpg" alt="Project Three Image" >
+                <h3>AWS Solutions Architect - Associate</h3>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="https://www.credly.com/badges/97d09da7-ceb2-4208-ba46-ac4034720133/public_url" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card certification-card">
+                <img class="project-image" src="src/lifelong-learning.jpg" alt="Project Three Image" >
+                <h3>Lifelong Learning</h3>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="https://www.credly.com/badges/4f00f85c-a3e2-44bb-9e48-2b7f864dd5d9/public_url" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card certification-card">
+                <img class="project-image" src="src/scrum-foundation-professional-certificate-sfpc.1.jpg" alt="Project Three Image" >
+                <h3>Scrum Foundation Professional Certificate</h3>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="https://www.credly.com/badges/e95bbaa3-8e85-4929-b7c9-2c8b04acd76d/public_url" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            <div class="project-card certification-card">
+                <img class="project-image" src="src/remote-work-and-virtual-collaboration-professional-certificate-rwvcpc.jpg" alt="Project Three Image" >
+                <h3>Remote Work and Virtual Collaboration Professional Certificate</h3>
+                <hr/>
+                <p class="subtext"><a class="content-link" href="https://www.credly.com/badges/78a9969a-edfe-4992-a20a-86b255bd29a5/public_url" target="_blank" rel="noopener noreferrer">View here</a></p>
+            </div>
+
+            
+        </div>
+
+        <div class="more-link">
+            <p class="subtext"><a class="content-link" href="https://www.linkedin.com/in/jose-martin-acosta/details/certifications/" target="_blank" rel="noopener noreferrer">View More Certifications</a></p>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <h2>Contact me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter name here…"/><br/>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter email here…"br/>
+            <label for="message">How can I help you?</label>
+            <textarea name="message" placeholder="Enter your message…"></textarea><br/>
+            <input id="formButton" class="button" value="Submit" type="submit">
+      </form>
+
+      <div id="funcional">
+      </div>
+      
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
